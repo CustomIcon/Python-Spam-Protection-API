@@ -2,7 +2,7 @@ from json import JSONDecodeError
 from typing import Union
 
 import aiohttp
-from .errors import UnknownError
+from .errors import UnknownError, HostDownError
 from .types import Blacklist
 
 
@@ -77,4 +77,4 @@ class SPBClient:
         except UnknownError:
             return False
         except aiohttp.client_exceptions.ClientConnectorError:
-            return "Api is down at the moment"
+            raise HostDownError("Api is down at the moment")

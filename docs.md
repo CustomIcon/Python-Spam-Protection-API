@@ -1,15 +1,15 @@
-# 🎉 Welcome to the unofficial intellivoid-spam-protection wiki!
+# 🎉 Welcome to the Python-Spam-Protection-API Documentation!
 
-This library handles All Requests done to https://api.intellivoid.net/spamprotection/v1/lookup. To understand how this is meant to be used, please see read the following Documentation
+This library handles All Requests done to https://api.intellivoid.net/spamprotection/v1/lookup. To understand how this is meant to be used, please read the following Documentation
 
 ## ✨ Getting Started
 - Installing the library:
  
     `pip install Intellivoid-SPB`
 
-- For those who wants to try out Development Builds:
+- Installing via source:
 
-    `pip install git+https://github.com/OpenRestfulAPI/intellivoid-spam-protection@dev`
+    `pip install git+https://github.com/intellivoid/Python-Spam-Protection-API`
 
 ## Methods
 Currently there are 2 methods that can be called from `SPBClient()`
@@ -18,11 +18,11 @@ Currently there are 2 methods that can be called from `SPBClient()`
 - `check_blacklist()`
     - `user_id`: a `username` or `user_id`
     
-    `Returns`: [spamprotection.types.Blacklist](https://github.com/OpenRestfulAPI/intellivoid-spam-protection/blob/fa299feab04ab1a9e11480b6af25279ef395f020/spamprotection/types.py#L13)
+    `Returns`: [spamprotection.types.Blacklist](https://github.com/intellivoid/Python-Spam-Protection-API/blob/da6c0270ea30f51fc8737da9615bd80a4d6028b7/spamprotection/types.py#L13)
 
     _example_:
     ```
-    from spamprotection.sync import SPBClient()
+    from spamprotection.sync import SPBClient
 
     client = SPBClient()
     status = client.check_blacklist("DeprecatedUser")
@@ -36,7 +36,7 @@ Currently there are 2 methods that can be called from `SPBClient()`
 
     `Returns`: `[dict()]`
 
-    _example__:
+    _example_:
     ```
     from spamprotection.sync import SPBClient()
 
@@ -49,7 +49,7 @@ Currently there are 2 methods that can be called from `SPBClient()`
 
 ## Detailed Examples
 
-All Detailed Examples are listed inside [Examples Directory](https://github.com/OpenRestfulAPI/intellivoid-spam-protection/tree/master/examples)
+All Detailed Examples are listed inside [Examples Directory](https://github.com/intellivoid/Python-Spam-Protection-API/tree/master/examples)
 
 
 ## Development
@@ -60,10 +60,6 @@ For those who wants to contribute or Develop the wrapper follow the instructions
 
 - Installation of `python3.6` or `python3.8`
 - Installation of `make`: `sudo apt install make`
-- clone the github repository and switch to dev branch: `git clone https://github.com/OpenRestfulAPI/intellivoid-spam-protection && cd intellivoid-spam-protection && git checkout dev`
+- clone the github repository and switch to dev branch: `git clone https://github.com/intellivoid/Python-Spam-Protection-API && cd Python-Spam-Protection-API`
 - setup a virtualenv and install requirements: `pip install requirements_dev.txt`
 - 🎉 Finally you can test the changes in examples folder :D
-
-
-## Note
-This is an Unofficial wrapper made by an individual on Telegram. The person who owns and created this library has nothing to do with Intellivoid Company.

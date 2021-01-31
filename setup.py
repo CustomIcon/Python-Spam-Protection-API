@@ -10,15 +10,15 @@ with open("requirements.txt") as f:
 
 
 setuptools.setup(
-    name="Intellivoid SPB",
+    name="Intellivoid Spamprotection",
     version=__version__,
-    description="Unofficial SPB API Wrapper",
+    description="Python Spamprotection API Wrapper",
     long_description=long_description,
     long_description_content_type="text/markdown",
     license="GNU Lesser General Public License v3 (LGPLv3)",
     author="Pokurt",
     author_email="poki@pokurt.me",
-    url="https://github.com/OpenRestfulAPI/intellivoid-spam-protection",
+    url="https://github.com/intellivoid/Python-Spam-Protection-API",
     packages=setuptools.find_packages(),
     classifiers=[
         "Development Status :: 3 - Alpha",
