@@ -1,6 +1,6 @@
 import requests
 
-from .errors import UnknownError
+from .errors import UnknownError, HostDownError
 from .types import Blacklist
 
 from json import JSONDecodeError
@@ -74,3 +74,5 @@ class SPBClient:
             return Blacklist(**data)
         except UnknownError:
             return False
+        except requests.exceptions.ConnectionError:
+            raise HostDownError("Can not reach Endpoint at the moment")

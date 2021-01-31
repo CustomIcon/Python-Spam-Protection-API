@@ -1,6 +1,6 @@
-# Welcome to the unofficial intellivoid-spam-protection wiki!
+# Welcome to the Python-Spam-Protection-API wiki!
 
-This library handles All Requests done to https://api.intellivoid.net/spamprotection/v1/lookup. To understand how this is meant to be used, please see read the following [Documentation](https://github.com/OpenRestfulAPI/intellivoid-spam-protection/wiki)
+This library handles All Requests done to https://api.intellivoid.net/spamprotection/v1/lookup. To understand how this is meant to be used, please see read the following [Documentation](https://github.com/intellivoid/Python-Spam-Protection-API/blob/master/docs.md)
 
 ## Getting Started
 - Installing the library:
@@ -9,7 +9,7 @@ This library handles All Requests done to https://api.intellivoid.net/spamprotec
 
 - For those who wants to try out Development Builds:
 
-    `pip install git+https://github.com/OpenRestfulAPI/intellivoid-spam-protection@dev`
+    `pip install git+https://github.com/intellivoid/Python-Spam-Protection-API@dev`
 
 ## Usage
 
@@ -35,4 +35,4 @@ if __name__ == "__main__":
 
 ## Examples
 
-All Examples are in [Examples Directory](https://github.com/OpenRestfulAPI/intellivoid-spam-protection/tree/master/examples)
+All Examples are in [Examples Directory](https://github.com/intellivoid/Python-Spam-Protection-API/tree/master/examples)
